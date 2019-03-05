@@ -9,14 +9,15 @@
 body {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 300px repeat(2,1fr) 155px;
+    grid-template-rows: 150px repeat(2,1fr) 150px;
     grid-template-areas: "header header header" 
                         "article article article" 
                         "Youtube Youtube Spotify" 
                         "footer footer footer";
-    background-image: url(https://media.giphy.com/media/xWD3RgEfBLcQvje9Vm/giphy.gif);
-    background-repeat: repeat-x;
-    background-size: 100%;
+    background-image: url(../Imagenes/test.gif);
+    background-repeat: no-repeat;
+    background-size:cover
+    
 }
 
 header {
@@ -24,6 +25,8 @@ header {
     grid-area: header;
     flex-direction: column;
     align-items: center;
+
+    
     
 }
 
@@ -40,7 +43,8 @@ header {
 h1 {
     font-family: 'Dorsa', sans-serif;
     font-size: 10rem;
-    letter-spacing: 5px;
+    text-transform: uppercase; 
+    letter-spacing: 15px;
     align-self: flex-start;
     color: azure;
 }
@@ -51,7 +55,7 @@ nav ul li {
 }
     
  nav ul li a {
-    font-size: 6rem;
+    font-size: 3.5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #fff;
@@ -63,14 +67,17 @@ nav ul li {
     flex-direction: column;
     align-items: center;  
     justify-content: space-between;
-    margin: auto;
     grid-area: article;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 30px 30px 15px 30px;
+    margin: 30px 30px 15px 30px;
 }
 
 h2 {
     font-family: 'Dorsa', sans-serif;
+    text-transform: uppercase;
     font-size: 6rem;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     color: azure;
 }
 
@@ -88,7 +95,7 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
 
 article h3 {
@@ -105,9 +112,9 @@ article p {
     padding: 5px;
     margin: 5px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.5rem;
+    font-size: 1rem;
     letter-spacing: 0.5px;
-    color: azure;
+    color:aliceblue;
 }
 
 
@@ -130,19 +137,86 @@ article p {
     flex:1;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    
+}
+
+section h2 {
+    font-family: 'Dorsa', sans-serif;
+    text-transform: uppercase;
+    font-size: 6rem;
+    letter-spacing: 3px;
+    color: azure; 
+}
+
 .youtube {
     grid-area: Youtube;
-    padding: 30px 30px 0 30px;
-    margin: 30px 30px 0 30px;
+    padding: 30px 30px 40px 30px;
+    margin: 30px 30px 40px 30px;
+    background-color: rgba(255, 255, 255, 0.2);   
 }
 
 .Spotify {
     grid-area: Spotify;
-    padding: 30px 30px 0 30px;
-    margin: 30px 30px 0 30px;
+    padding: 30px 30px 40px 30px;
+    margin: 30px 30px 40px 30px;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 footer {
-    background: gray;
+    background-color: rgba(8, 7, 7, 0.8);
     grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;    
+}
+
+footer section {
+    display: flex;
+    flex-direction:row;
+    padding: 30px 10px;
+}
+
+footer section p {
+    padding: 5px;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    color: azure;   
+}
+
+/*DOC BIO*/
+.Biografia {
+    grid-area: article;
+}
+
+.bio {
+    padding: 30px 30px 40px 30px;
+    margin: 30px 30px 40px 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    grid-column-start: repeat(3,1fr);
+    grid-row-start: article;
+    grid-row-end: Spotify;
+}
+
+.bio p {
+    padding: 5px;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    color:aliceblue;
+
+}
+
+.bio img {
+    justify-content: center;
+    margin: 30px 0 30px 0;
 }
