@@ -1,0 +1,11 @@
+@import url("main.css");
+
+.musica {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,155px);
+    grid-template-areas: "uno dos" 
+                        "tres cuatro"  
+                        "cinco seis";
+}
+

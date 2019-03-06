@@ -1,0 +1,29 @@
+@import url("main.css");
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+    margin: 30px 30px;
+}
+
+.bio p {
+    padding: 5px;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    color:aliceblue;
+    margin: 2px;
+    padding: 2px;
+    justify-content: center;
+}
+
+.bio img {
+    padding: 5px;
+    margin: 5px;
+    width: 90%;
+    justify-content: center;  
+}
