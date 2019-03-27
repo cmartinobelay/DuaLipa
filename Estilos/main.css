@@ -6,11 +6,11 @@
     box-sizing: border-box;    
 }
 
-body {
-    background-image: url(../Imagenes/test.gif);
+/*body {
+    background-image: url(../Imagenes/dualipagif.gif);
     background-repeat: no-repeat;
-    background-size:cover;
-}
+    background-size:cover; 
+}*/
 
 header {
     display: flex;

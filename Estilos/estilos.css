@@ -112,3 +112,234 @@ section h2 {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 150px repeat(2,1fr) 150px;
+        grid-template-areas: "header header header" 
+                            "article article article" 
+                            "Youtube Youtube Spotify" 
+                            "footer footer footer";
+        background-image: url(../Imagenes/test.gif);
+        background-repeat: no-repeat;
+        background-size:cover;    
+    }
+    
+    
+    .News {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        justify-content: space-between;
+        grid-area: article;
+        background-color: rgba(255, 255, 255, 0.4);
+        padding: 30px 30px 15px 30px;
+        margin: 30px 30px 15px 30px;
+        flex-wrap: nowrap;
+    }
+    
+    
+    .News ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .News ul li {
+        flex: 1;
+    }
+    
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    article h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: azure;
+        padding: 5px;
+        margin: 5px;    
+    }
+    
+    article p {
+        padding: 5px;
+        margin: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+        color:aliceblue;
+    }
+    
+    .Noticias1 {
+        padding: 0 50px 0 50px;
+        margin: 0 50px 0 50px;
+        flex:1;
+    }
+    
+    .Noticias2 {
+        padding: 0 50px 0 50px;
+        margin: 0 50px 0 50px;
+        flex:1;
+    }
+    
+    .Noticias3 {
+        padding: 0 50px 0 50px;
+        margin: 0 50px 0 50px;
+        flex:1;
+    }
+    
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;    
+    }
+    
+    section h2 {
+        font-family: 'Dorsa', sans-serif;
+        text-transform: uppercase;
+        font-size: 3rem;
+        letter-spacing: 3px;
+        color: azure;
+        margin: 30px 0 30px 0;
+        align-self: center; 
+    }
+    
+    .youtube {
+        grid-area: Youtube;
+        padding: 30px 30px 40px 30px;
+        margin: 30px 30px 40px 30px;
+        background-color: rgba(255, 255, 255, 0.2);   
+    }
+    
+    .Spotify {
+        grid-area: Spotify;
+        padding: 30px 30px 40px 30px;
+        margin: 30px 30px 40px 30px;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 150px repeat(2,1fr) 150px;
+        grid-template-areas: "header header header" 
+                            "article article article" 
+                            "Youtube Youtube Spotify" 
+                            "footer footer footer";
+        background-image: url(../Imagenes/test.gif);
+        background-repeat: no-repeat;
+        background-size:cover;    
+    }
+    
+    
+    .News {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        justify-content: space-between;
+        grid-area: article;
+        background-color: rgba(255, 255, 255, 0.4);
+        padding: 30px 30px 15px 30px;
+        margin: 30px 30px 15px 30px;
+        flex-wrap: nowrap;
+    }
+    
+    
+    .News ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .News ul li {
+        flex: 1;
+    }
+    
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    article h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: azure;
+        padding: 5px;
+        margin: 5px;    
+    }
+    
+    article p {
+        padding: 5px;
+        margin: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+        color:aliceblue;
+    }
+    
+    .Noticias1 {
+        padding: 0 50px 0 50px;
+        margin: 0 50px 0 50px;
+        flex:1;
+    }
+    
+    .Noticias2 {
+        padding: 0 50px 0 50px;
+        margin: 0 50px 0 50px;
+        flex:1;
+    }
+    
+    .Noticias3 {
+        padding: 0 50px 0 50px;
+        margin: 0 50px 0 50px;
+        flex:1;
+    }
+    
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;    
+    }
+    
+    section h2 {
+        font-family: 'Dorsa', sans-serif;
+        text-transform: uppercase;
+        font-size: 3rem;
+        letter-spacing: 3px;
+        color: azure;
+        margin: 30px 0 30px 0;
+        align-self: center; 
+    }
+    
+    .youtube {
+        grid-area: Youtube;
+        padding: 30px 30px 40px 30px;
+        margin: 30px 30px 40px 30px;
+        background-color: rgba(255, 255, 255, 0.2);   
+    }
+    
+    .Spotify {
+        grid-area: Spotify;
+        padding: 30px 30px 40px 30px;
+        margin: 30px 30px 40px 30px;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+
+
